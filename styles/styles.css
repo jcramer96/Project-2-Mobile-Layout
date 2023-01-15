@@ -20,6 +20,7 @@ ul {
 a {
     text-decoration: none;
     color: black;
+    font-weight: 400;
 }
 li a:hover {
     text-decoration: underline;
@@ -72,7 +73,6 @@ p {
     padding: 0 30px 30px;
 }
 .portfolio-img {
-    display: block;
     margin: auto;
     width: 90%;
     padding-top: 20px;
@@ -98,7 +98,7 @@ label {
     padding-right: 10px;
 }
 #phone-link {
-    padding-bottom: 10px;
+    padding-bottom: 20px;
 }
 hr {
     width: 90%;
@@ -127,8 +127,75 @@ h4 a {
     font-weight: 400;
 }
 @media screen and (min-width: 768px) {
-    
+    nav {
+        padding-top: 40px;
+    }
+    ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+    h1 {
+        width: 100%;
+    }
+    h2 {
+        padding: 50px 0 50px;
+    }
+    .main-nav {
+        width: 15%;
+        margin: 1em 0 1.3em;
+        border: none;
+        background-color: wheat;
+    }
+    li a:hover {
+        border: 1px solid white;
+        background-color: white;
+        padding: 5px;
+        text-decoration: none;
+    }
+    #home {
+        flex-direction: row-reverse;
+    }
+    .profile-img {
+        padding-right: 30px;
+        width: 45%;
+    }
+    .portfolio-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .profile-img {
+        width: 95%;
+    }
+    .project {
+        width: 50%;
+    }
+    #skills {
+        padding: 30px 0;
+    }
+    #contact {
+        padding: 0 0 50px;
+    }
+    .foot-container {
+        padding-bottom: 100px;
+    }
 }
 @media screen and (min-width: 1024px) {
-    
+    ul {
+        flex-wrap: nowrap;
+        padding-right: 0;
+        padding-left: 0;
+    }
+    h1 {
+        padding: 0 0 0 20px;
+        text-align: left;
+    }
+    .main-nav {
+        padding: 0 10px 0 0;
+        margin: 0;
+    }
 }
