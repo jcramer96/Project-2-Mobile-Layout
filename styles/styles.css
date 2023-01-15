@@ -38,13 +38,15 @@ h1{
     font-weight: 700;
     font-size: 1.7rem;
     padding: 10px 0 20px;
-    color:darkcyan;
+    color:darkslategray;
 }
 main {
     text-align: center;
 }
 #home {
     padding: 30px 10px 40px;
+    display: flex;
+    flex-direction: column;
 }
 .profile-img {
     display: block;
@@ -75,9 +77,16 @@ p {
     width: 90%;
     padding-top: 20px;
 }
+.skills-list {
+    display: flex;
+    flex-direction: column;
+}
 nav,
-#home {
-    background-color: #e8e8e8;
+#home,
+#skills,
+#contact,
+footer {
+    background-color: wheat;
 }
 #contact {
     padding: 10px 0 50px;
@@ -94,7 +103,8 @@ label {
 hr {
     width: 90%;
     margin: auto;
-    background-color: #e8e8e8;
+    border: 1px solid grey;
+    background-color: grey;
 }
 .foot-container {
     display: flex;
@@ -115,4 +125,10 @@ hr {
 }
 h4 a {
     font-weight: 400;
+}
+@media screen and (min-width: 768px) {
+    
+}
+@media screen and (min-width: 1024px) {
+    
 }
