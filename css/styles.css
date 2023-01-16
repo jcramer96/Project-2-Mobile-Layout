@@ -13,7 +13,9 @@ nav{
     width: 100%;
     padding: 10px;
 }
-ul {
+.top-nav,
+.skills-list,
+.bottom-nav {
     text-align: center;
     list-style: none;
 }
@@ -104,21 +106,25 @@ label {
 #phone-link {
     padding-bottom: 20px;
 }
-.foot-container {
+footer {
     display: flex;
     justify-content: space-between;
     margin: auto;
     padding: 30px 0;
     font-weight: 400;
     border-top: 2px solid grey;
-    width: 90%;
+    width: 100vw;
 }
 #footer-name {
     text-align: left;
     padding-left: 20px;
     font-weight: 400;
 }
-#footer-link {
+.bottom-nav {
+    width: 100%;
+}
+.top,
+.full {
     text-align: right;
     padding-right: 20px;
     text-transform: uppercase;
@@ -126,11 +132,14 @@ label {
 h4 a {
     font-weight: 400;
 }
+.full {
+    display: none;
+}
 @media screen and (min-width: 768px) {
     nav {
         padding-top: 40px;
     }
-    ul {
+    .top-nav {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -179,12 +188,21 @@ h4 a {
     .project {
         width: 50%;
     }
-    .foot-container {
+    footer {
         padding-bottom: 50px;
     }
+    .top {
+        display: none;
+    }
+    .full {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        max-width: 80px;
+        }
 }
 @media screen and (min-width: 1024px) {
-    ul {
+    .top-nav {
         flex-wrap: nowrap;
         padding-right: 0;
         padding-left: 0;
