@@ -111,9 +111,8 @@ footer {
     justify-content: space-between;
     margin: auto;
     padding: 30px 0;
-    font-weight: 400;
     border-top: 2px solid grey;
-    width: 100vw;
+    width: 100%;
 }
 #footer-name {
     text-align: left;
@@ -122,15 +121,16 @@ footer {
 }
 .bottom-nav {
     width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    font-weight: 400;
 }
 .top,
 .full {
     text-align: right;
     padding-right: 20px;
     text-transform: uppercase;
-}
-h4 a {
-    font-weight: 400;
 }
 .full {
     display: none;
@@ -198,7 +198,6 @@ h4 a {
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
-        max-width: 80px;
         }
 }
 @media screen and (min-width: 1024px) {
